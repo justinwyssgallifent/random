@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="underscore-min.js" type="text/javascript"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="ezra.js"></script>
+      
+    <style type="text/css">
+      .bordered {
+      border: 2px solid black;
+      border-radius: 10px;
+      padding:10px;
+      margin:10px;
+      }
+      .node {
+      fill: #ccc;
+      stroke: #222;
+      stroke-width: 1px;
+      }
+      .linkthin {
+      stroke-width: 5px;
+      }
+      .linkthick {
+      stroke-width: 10px;
+      }
+      .linkgrey {
+      stroke: #777;
+      }
+      .linkred {
+      stroke: #FF0000;
+      }
+      .datatext {
+      fill: yellow;
+      font-size: 100%;
+      font-family: sans-serif;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div id="plot" style="text-align:center;display:block;height:400px;padding:10px;" class="bordered"></div>
+    <div>
+      <div id="dataGraph" style="float:left;width:300px;height:250px;" class="bordered"></div>
+      <div style="float:left;padding:10px;">
+        <input type="button" id="reverse" value="Reverse">
+      </div>
+      <div style="float:right;height:250px;width:200px;" class="bordered">
+        <div style="font-weight:bold;height:10%;">Points</div>
+        <div id="data" style="height:90%;overflow-y:scroll;"></div>
+      </div>
+  </body>
+</html>
